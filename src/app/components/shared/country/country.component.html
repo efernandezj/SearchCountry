@@ -1,0 +1,13 @@
+<div class="card" style="width: 350px;">
+  <img [src]="country.img" class="card-img" [alt]="country.imgAlt">
+  <div class="card-body">
+    <h5 class="card-title">{{country.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{country.region}}</h6>
+    <p class="card-text">Population: {{country.population}}</p>
+
+
+      <a [routerLink]="['/country',country.name]" class="btn btn-primary ">More Info...</a>
+
+
+  </div>
+</div>

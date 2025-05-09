@@ -1,0 +1,14 @@
+<div class="m-4">
+  <div *ngIf="countries.length == 0 && !loading" class="alert alert-warning text-center" role="alert">
+    <strong>¡Ups!</strong> No results found.
+  </div>
+
+
+  <div *ngIf="countries.length > 0 && !loading" class="grid-container">
+    <app-country [country]="country" *ngFor="let country of countries"></app-country>
+  </div>
+</div>
+
+<div id="loading" *ngIf="loading">
+  Cargando...
+</div>

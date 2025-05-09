@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card shadow-lg mt-4">
+        <div *ngIf="country.img" class="card-body">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-5">
+                    <img [src]="country.img" class="card-img-top" [alt]="country.imgAlt">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h3 class="card-title text-center">{{country.name}}</h3>
+                    <p class="card-text"><strong>Official Name:</strong> {{country.officialName}}</p>
+                    <p class="card-text"><strong>Capital:</strong> {{country.capital}}</p>
+                    <p class="card-text"><strong>Region:</strong> {{country.region}}</p>
+                    <p class="card-text"><strong>Subregion:</strong> {{country.subRegion}}</p>
+                    <p class="card-text"><strong>Population:</strong> {{country.population}}</p>
+                    <p class="card-text"><strong>Languages:</strong> Idioma</p>
+                    <p class="card-text"><strong>Currency:</strong> {{country.currency}}</p>
+                    <p class="card-text"><strong>Bordering countries:</strong> {{country.languages}}</p>
+                    <div class="text-center mt-3">
+                        <a [routerLink]="['/home']" class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
