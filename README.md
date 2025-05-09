@@ -17,5 +17,6 @@ Clona el repositorio e instala las dependencias:
 ```sh
 git clone https://github.com/efernandezj/SearchCountry.git
 cd proyecto-angular
+git checkout master
 npm install
 ng serve -o
